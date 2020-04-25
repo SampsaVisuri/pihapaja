@@ -1,0 +1,378 @@
+@import '_reset.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+
+h1 {
+    font-family: 'Baumans', cursive;
+    font-size: 46px;
+    color: #333;
+}
+h2 {
+    font-family: 'Baumans', cursive;
+    font-size: 40px;
+    color: #333;
+    @include desktop {
+        font-size: 42px;
+    }
+}
+h3 {
+    font-family: 'Baumans', cursive;
+    font-size: 34px;
+    color: #333;
+    @include desktop {
+        font-size: 36px;
+    }
+}
+h4 {
+    font-family: 'Baumans', cursive;
+    font-size: 28px;
+    color: #333;
+    @include desktop {
+        font-size: 30px;
+    }
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    @include desktop {
+        font-size: 20px;
+    }
+}
+a {
+    font-family: 'Baumans', cursive;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    @include desktop {
+        font-size: 20px;
+    }
+}
+.small-space {
+    margin-top: 15px;
+}
+.space {
+    margin-top: 30px;
+}
+.large-space {
+    margin-top: 50px;
+}
+
+.bullet {
+    list-style: disc;
+    margin-left: 40px;
+    font-family: 'Baumans', cursive;
+    font-size: 18px;
+    line-height: 30px;
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.desktop-only {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.hide-desktop {
+    @include desktop {
+        display: none;
+    }
+}
+
+.desktop-header-grid {
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+header {
+    .logo-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 10px 0;
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            @include desktop {
+                justify-content: flex-start;
+                margin-left: 250px;  
+            }
+            h1 {
+                @include desktop {
+                    transition: ease 0.3s;
+                &:hover {
+                    transform: scale(1.15);
+                    cursor: pointer;
+                    }  
+                }
+            }
+        }
+        .phone {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 15px;
+            i {
+                color: #333;
+            }
+            @include desktop {
+                display: none;
+            }
+        }
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        background-color: green;
+        height: 35px;
+        @include desktop {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        .link-index {
+            text-align: center;
+            margin: auto 0;
+            transition: ease 0.3s;
+            @include desktop {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            a {
+                color: #ffff;
+                @include desktop {
+                    color: #333;
+                    margin-right: 30px;
+                    &:hover {
+                        color: #555;
+                    }
+                }
+            }
+        }
+        .link-viherrakennus {
+            text-align: center;
+            margin: auto 0;
+            transition: ease 0.3s;
+            @include desktop {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            a {
+                color: #ffff;
+                @include desktop {
+                    color: #333;
+                    &:hover {
+                        color: #555;
+                    }
+                }
+            }
+        }
+        .link-viherhoito {
+            text-align: center;
+            margin: auto 0;
+            transition: ease 0.3s;
+            @include desktop {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            a {
+                color: #ffff;
+                @include desktop {
+                    color: #333;
+                    margin-left: 30px;
+                    &:hover {
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+    .hero {
+        background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url('/images/grass.jpg');
+        height: 200px;
+        @include centerImg;
+        @include desktop {
+            background-image: linear-gradient(rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.35)), url('/images/grass.jpg');
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-img {
+            .hero-text {
+                h2 {
+                    color: #fff;
+                    text-shadow: 1px 1px 2px #333;
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin: 0 15px; 
+    @include desktop {
+        margin: 0 250px;
+    }
+    .intro {
+        p {
+            font-size: 20px;
+        }
+    }
+        .tarjous {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border: solid 3px green;
+        border-radius: 5px;
+        h4 {
+            text-align: center;
+        }
+        @include desktop {
+            background:linear-gradient(rgba(1, 1, 1, 0.2),rgba(1, 1, 1, 0.2)), url('/images/clover.jpg');
+            border: none;
+            height: 200px;
+            @include centerImg;
+            h4 {
+                color: #fff;
+                text-shadow: 1px 2px 5px #111;
+                font-size: 40px;
+            }
+        }
+    }
+    .palvelut {
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        .viherrakennus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background:linear-gradient(rgba(117, 117, 106, 0.5),rgba(117, 117, 106, 0.5)), url('/images/pavement.jpg');
+            @include centerImg;
+            border-radius: 5px;
+            h4 {
+                color: #fff;
+                text-shadow: 1px 2px 5px #111;
+                @include desktop {
+                    font-size: 34px;
+                }
+            }
+            @include desktop {
+                height: 200px;
+                margin-right: 10px;
+                transition: ease 0.3s;
+                &:hover {
+                    background:linear-gradient(rgba(117, 117, 106, 0.7),rgba(117, 117, 106, 0.7)), url('/images/pavement.jpg');
+                    @include centerImg;
+                }
+            }
+        }
+        .viherhoito {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background:linear-gradient(rgba(33, 65, 36, 0.4),rgba(4, 102, 13, 0.4)), url('/images/mow.jpg');
+            @include centerImg;
+            border-radius: 5px;
+            h4 {
+                color: #fff;
+                text-shadow: 1px 2px 5px #111;
+                @include desktop {
+                    font-size: 34px;
+                }
+            }
+            @include desktop {
+                height: 200px;
+                margin-left: 10px;
+                transition: ease 0.3s;
+                &:hover {
+                    background:linear-gradient(rgba(33, 65, 36, 0.6),rgba(4, 102, 13, 0.6)), url('/images/mow.jpg');
+                    @include centerImg;
+                }
+            }
+        }
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        @include desktop {
+            width: 300px;
+        }
+        .profile-img {
+            background: url('/images/sampsa.jpeg');
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            margin-left: 15px;
+            @include centerImg;
+        }
+        .contact-info-wrap {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .contact-info {
+                p {
+                    margin-bottom: 5px;
+                    font-family: 'Baumans', cursive;
+                }
+                a {
+                    @include desktop {
+                        transition: ease 0.15s;
+                        &:hover {
+                        color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #444;
+    height: 150px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 10px;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+    .footer-content {
+        a {
+            color: #fff; 
+            @include desktop {
+                &:hover {
+                    color: #999;
+                }
+            }
+        }
+        p {
+            font-family: 'Baumans', cursive;
+            color: #fff; 
+        }
+    }
+    
+}
+
+

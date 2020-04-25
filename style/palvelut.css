@@ -1,0 +1,136 @@
+.viherrakennus-hero-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/pavement.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/pavement.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  .viherrakennus-hero-img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("/images/pavement.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("/images/pavement.jpg");
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.viherrakennus-hero-img .hero-img .hero-text h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.viherrakennus-intro p {
+  font-size: 20px;
+}
+
+.viherrakennus-kuvat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+@media only screen and (min-width: 900px) {
+  .viherrakennus-kuvat {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.viherrakennus-kuvat .viherrakennus1 {
+  background: url("/images/pavement.jpg");
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+  .viherrakennus-kuvat .viherrakennus1 {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+}
+
+.viherrakennus-kuvat .viherrakennus2 {
+  background: url("/images/terrace.jpg");
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .viherrakennus-kuvat .viherrakennus2 {
+    margin: 0 5px;
+  }
+}
+
+.viherrakennus-kuvat .viherrakennus3 {
+  background: url("/images/garden.jpg");
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+  .viherrakennus-kuvat .viherrakennus3 {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+}
+
+.viherhoito-hero-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/mow.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/mow.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  .viherhoito-hero-img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("/images/mow.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("/images/mow.jpg");
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.viherhoito-hero-img .hero-img .hero-text h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+}
+/*# sourceMappingURL=palvelut.css.map */

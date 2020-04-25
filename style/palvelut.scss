@@ -1,0 +1,100 @@
+@import 'mixins.scss';
+
+// VIHERRAKENNUS
+
+.viherrakennus-hero-img {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url('/images/pavement.jpg');
+    height: 200px;
+    @include centerImg;
+    @include desktop {
+        background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url('/images/pavement.jpg');
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-img {
+        .hero-text {
+            h2 {
+                color: #fff;
+                text-shadow: 1px 1px 2px #333;
+            }
+        }
+    }
+}
+
+.viherrakennus-intro {
+    p {
+        font-size: 20px;
+    }
+}
+
+.viherrakennus-kuvat {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    @include desktop {
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    .viherrakennus1 {
+        background: url('/images/pavement.jpg');
+        height: 250px;
+        @include centerImg;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        @include desktop {
+            margin-bottom: 0px;
+            margin-right: 10px;
+        }
+    }
+    .viherrakennus2 {
+        background: url('/images/terrace.jpg');
+        height: 250px;
+        @include centerImg;
+        border-radius: 5px;
+        margin: 5px 0;
+        @include desktop {
+            margin: 0 5px;
+        }
+    }
+    .viherrakennus3 {
+        background: url('/images/garden.jpg');
+        height: 250px;
+        @include centerImg;
+        border-radius: 5px;
+        margin-top: 10px;
+        @include desktop {
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+// VIHERHOITO
+.viherhoito-hero-img {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url('/images/mow.jpg');
+    height: 200px;
+    @include centerImg;
+    @include desktop {
+        background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url('/images/mow.jpg');
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-img {
+        .hero-text {
+            h2 {
+                color: #fff;
+                text-shadow: 1px 1px 2px #333;
+            }
+        }
+    }
+}
+
+
+
