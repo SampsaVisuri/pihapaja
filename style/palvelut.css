@@ -1,6 +1,6 @@
 .viherrakennus-hero-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/pavement.jpg");
-  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/pavement.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("../images/pavement.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("../images/pavement.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,8 +9,8 @@
 
 @media only screen and (min-width: 900px) {
   .viherrakennus-hero-img {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("/images/pavement.jpg");
-    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("/images/pavement.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("../images/pavement.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("../images/pavement.jpg");
     height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104,8 +104,8 @@
 }
 
 .viherhoito-hero-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/mow.jpg");
-  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/mow.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("../images/mow.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("../images/mow.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,8 +114,8 @@
 
 @media only screen and (min-width: 900px) {
   .viherhoito-hero-img {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("/images/mow.jpg");
-    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("/images/mow.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.5)), to(rgba(5, 5, 5, 0.5))), url("../images/mow.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.5)), url("../images/mow.jpg");
     height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
