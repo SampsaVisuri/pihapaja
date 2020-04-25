@@ -526,7 +526,7 @@ header nav .link-viherhoito a {
 
 header .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/grass.jpg");
-  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/grass.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("./images/grass.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -536,7 +536,7 @@ header .hero {
 @media only screen and (min-width: 900px) {
   header .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.35)), to(rgba(5, 5, 5, 0.35))), url("/images/grass.jpg");
-    background-image: linear-gradient(rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.35)), url("/images/grass.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.35)), url("./images/grass.jpg");
     height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
