@@ -525,8 +525,8 @@ header nav .link-viherhoito a {
 }
 
 header .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("/images/grass.jpg");
-  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("/images/grass.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.1)), to(rgba(5, 5, 5, 0.1))), url("../images/grass.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)), url("../images/grass.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -535,8 +535,8 @@ header .hero {
 
 @media only screen and (min-width: 900px) {
   header .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.35)), to(rgba(5, 5, 5, 0.35))), url("/images/grass.jpg");
-    background-image: linear-gradient(rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.35)), url("/images/grass.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.35)), to(rgba(5, 5, 5, 0.35))), url("../images/grass.jpg");
+    background-image: linear-gradient(rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.35)), url("../images/grass.jpg");
     height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,8 +627,8 @@ main .palvelut .viherrakennus {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 117, 106, 0.5)), to(rgba(117, 117, 106, 0.5))), url("/images/pavement.jpg");
-  background: linear-gradient(rgba(117, 117, 106, 0.5), rgba(117, 117, 106, 0.5)), url("/images/pavement.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 117, 106, 0.5)), to(rgba(117, 117, 106, 0.5))), url("../images/pavement.jpg");
+  background: linear-gradient(rgba(117, 117, 106, 0.5), rgba(117, 117, 106, 0.5)), url("../images/pavement.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -654,8 +654,8 @@ main .palvelut .viherrakennus h4 {
     transition: ease 0.3s;
   }
   main .palvelut .viherrakennus:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 117, 106, 0.7)), to(rgba(117, 117, 106, 0.7))), url("/images/pavement.jpg");
-    background: linear-gradient(rgba(117, 117, 106, 0.7), rgba(117, 117, 106, 0.7)), url("/images/pavement.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 117, 106, 0.7)), to(rgba(117, 117, 106, 0.7))), url("../images/pavement.jpg");
+    background: linear-gradient(rgba(117, 117, 106, 0.7), rgba(117, 117, 106, 0.7)), url("../images/pavement.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -673,8 +673,8 @@ main .palvelut .viherhoito {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 65, 36, 0.4)), to(rgba(4, 102, 13, 0.4))), url("/images/mow.jpg");
-  background: linear-gradient(rgba(33, 65, 36, 0.4), rgba(4, 102, 13, 0.4)), url("/images/mow.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 65, 36, 0.4)), to(rgba(4, 102, 13, 0.4))), url("../images/mow.jpg");
+  background: linear-gradient(rgba(33, 65, 36, 0.4), rgba(4, 102, 13, 0.4)), url("../images/mow.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -700,8 +700,8 @@ main .palvelut .viherhoito h4 {
     transition: ease 0.3s;
   }
   main .palvelut .viherhoito:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 65, 36, 0.6)), to(rgba(4, 102, 13, 0.6))), url("/images/mow.jpg");
-    background: linear-gradient(rgba(33, 65, 36, 0.6), rgba(4, 102, 13, 0.6)), url("/images/mow.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 65, 36, 0.6)), to(rgba(4, 102, 13, 0.6))), url("../images/mow.jpg");
+    background: linear-gradient(rgba(33, 65, 36, 0.6), rgba(4, 102, 13, 0.6)), url("../images/mow.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -724,7 +724,7 @@ main .contact {
 }
 
 main .contact .profile-img {
-  background: url("/images/sampsa.jpeg");
+  background: url("../images/sampsa.jpeg");
   height: 90px;
   width: 90px;
   border-radius: 50%;
